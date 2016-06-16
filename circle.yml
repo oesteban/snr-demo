@@ -1,0 +1,14 @@
+machine:
+  python:
+    version: 2.7
+
+dependencies:
+  pre:
+    - wget https://bootstrap.pypa.io/get-pip.py && python get-pip.py --user
+    - pip install numpy --user
+    - pip install scipy --user
+    - pip install nose --user
+
+test:
+  override:
+    - nosetest --with-doctest .
