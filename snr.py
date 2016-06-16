@@ -18,7 +18,7 @@ def snr(img, smask, nmask=None, erode=True, fglabel=1):
     >>> np.random.seed(1234)
     >>> img += np.random.normal(0.0, 1./expected_snr, size=(50, 50, 50)) * 100 * smask
     >>> calculated_snr = snr(img, smask, erode=False)
-    >>> abs(calculated_snr - expected_snr) < 0.01
+    >>> abs(calculated_snr - expected_snr) < 0.001
     True
 
 
