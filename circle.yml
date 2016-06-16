@@ -4,10 +4,10 @@ machine:
 
 dependencies:
   pre:
-    - wget https://bootstrap.pypa.io/get-pip.py && python get-pip.py --user
-    - pip install numpy --user
-    - pip install scipy --user
-    - pip install nose --user
+    - wget https://bootstrap.pypa.io/get-pip.py && python get-pip.py
+    - pip install numpy
+    - pip install scipy
+    - pip install nose
 
 test:
   override:
